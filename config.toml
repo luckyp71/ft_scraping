@@ -1,0 +1,16 @@
+[storage]
+db_url = "sqlite:///data/ft.db"
+
+[crawl]
+concurrency = 6
+max_pages = 2000
+respect_robots = true
+delay_seconds = 1.0
+
+[llm]
+model_path = "/mnt/d/models/llm/Llama-3.2-3B-Instruct"
+n_ctx = 1024
+
+[presentation]
+out_path = "data/ft_themes.pptx"
+min_articles_per_theme = 5
