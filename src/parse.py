@@ -6,7 +6,6 @@ def extract_text(html):
     soup = BeautifulSoup(html, "html.parser")
     article_text = []
 
-    # Try main content
     for p in soup.find_all("p"):
         article_text.append(p.get_text(strip=True))
 
